@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries" />
+    <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
-    <nav id="dekstop-nav">
+    <nav id="desktop-nav">
       <div class="logo">Emmanuel Segbe</div>
       <div>
         <ul class="nav-links">
@@ -26,16 +26,36 @@
               <span></span>
               <span></span>
               <span></span>
+            </div>
+            <ul class="menu-links">
+              <li><a href="#about" onclick="toggleMenu()">about</a></li>
+              <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
+              <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+              <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+            </ul>
         </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">about</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
-        
-            <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
-        </div>
-      </div>
     </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="photo_2026-08-11_09-43-00.jpg" alt="Emmanuel Segbe profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Emmanuel Segbe</h1>
+            <p class="section__text__p2">A Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./files/Emmanuel_Segbe_Resume.pdf', '_blank')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Contact info
+                </button>
+            </div>
+        </div>
+        <div id="social-container">
+
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
